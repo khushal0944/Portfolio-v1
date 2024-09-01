@@ -1,33 +1,259 @@
+/* Imported Fonts */
+@import url("https://fonts.googleapis.com/css2?family=Edu+VIC+WA+NT+Beginner:wght@400..700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
-  }
+* {
+	/* font-family: "Edu VIC WA NT Beginner", cursive; */
+	font-family: cursive;
+	font-weight: 400;
+	color: white;
+	transition: all 0.1s;
 }
 
 body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+	background-color: black;
+	width: 80%;
+	margin: 0 auto;
+	cursor: url("/cursorMain.png"), auto;
 }
 
-@layer utilities {
-  .text-balance {
-    text-wrap: balance;
-  }
+html:focus-within {
+	scroll-behavior: smooth;
+}
+
+html {
+	scroll-behavior: smooth;
+}
+
+@media (prefers-reduced-motion: reduce) {
+	html:focus-within {
+		scroll-behavior: auto;
+	}
+
+	*,
+	*::before,
+	*::after {
+		animation-duration: 0.01ms !important;
+		animation-iteration-count: 1 !important;
+		transition-duration: 0.01ms !important;
+		scroll-behavior: auto !important;
+	}
+}
+
+::-webkit-scrollbar-track {
+	@apply rounded-md;
+}
+
+::-webkit-scrollbar {
+	@apply w-1.5 ;
+}
+
+::-webkit-scrollbar-thumb {
+	@apply rounded-xl bg-pink-500;
+}
+
+.cursor-pointer,
+.links-parent,
+a,
+button {
+	cursor: url("/cursorPointer.png"), pointer;
+}
+a,
+button {
+	cursor: url("/cursorPointer.png"), pointer;
+}
+
+p,
+h1,
+textarea,
+ul,
+ol,
+.line,
+.cursorText {
+	cursor: url("/cursorText.png"), text;
+}
+
+@media screen and (max-width: 650px) {
+	.hide-nav {
+		display: none;
+	}
+	.show-menu {
+		display: block;
+	}
+    .grid-1 {
+        @apply grid-cols-1
+    }
+	.vertical-flex {
+		flex-direction: column;
+	}
+}
+
+.gray {
+	color: #a3a3a3;
+}
+.pink {
+	@apply text-pink-500;
+}
+
+@media screen and (max-width: 1110px) {
+	body {
+		width: 100%;
+		padding: 10px;
+	}
+	#wrapper {
+		padding: 0 15px;
+	}
+}
+
+.poppins {
+	font-family: "Poppins", sans-serif;
+}
+
+.glow-cursor {
+	border-right: 2px solid transparent;
+	animation: glow 500ms infinite alternate;
+}
+.border-gradient {
+	position: relative;
+	background-color: black !important;
+}
+
+.border-gradient::before {
+	content: "";
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	background: conic-gradient(from 0deg, var(--color1), var(--color2), var(--color3));
+	z-index: -1;
+	filter: blur(6px);
+	border-radius: inherit;
+	transform: scale(1);
+	transition: filter 0.4s;
+}
+
+.border-gradient:hover::before {
+	filter: blur(15px);
+}
+
+/* Define gradients using CSS variables */
+.border-gradient1 {
+	--color1: rgb(205, 0, 144);
+	--color2: rgb(195, 0, 255);
+	--color3: rgb(54, 1, 54);
+}
+
+.border-gradient2 {
+	--color1: rgb(255, 20, 147);
+	--color2: rgb(160, 32, 240);
+	--color3: rgb(72, 61, 139);
+}
+
+.border-gradient3 {
+	--color1: rgb(220, 0, 150);
+	--color2: rgb(130, 0, 255);
+	--color3: rgb(70, 0, 70);
+}
+
+@keyframes glow {
+	0% {
+		border-color: transparent;
+	}
+	100% {
+		border-color: #fff;
+	}
+}
+
+.links {
+	position: relative;
+}
+
+.links::before {
+	content: "";
+	margin-bottom: 5px;
+	width: 0;
+	height: 2px;
+	border-radius: 2px;
+	position: absolute;
+	bottom: -6px;
+	right: 0;
+	transition: right 0.4s, width 0.4s, left 0.4s;
+	background-color: white;
+}
+
+.links:hover::before {
+	width: 100%;
+	left: 0;
+}
+.links-parent:hover {
+	transition: background-color 0.4s;
+	background-color: #404040;
+}
+
+.links-parent {
+	transition: background-color 0.4s;
+	padding: 5px 10px;
+	border-radius: 10px;
+}
+
+.floating-underline,
+.highlighter,
+.animated-box {
+	@apply relative inline-block z-10 cursor-pointer;
+	padding: 0 3px;
+}
+
+.floating-underline::before {
+	content: "";
+	position: absolute;
+	bottom: -1px;
+	left: 0;
+	width: 100%;
+	height: 2px;
+	background-color: #de1d8d;
+	transition: height 0.3s ease;
+	z-index: -1;
+}
+.floating-underline:hover::before {
+	height: 100%;
+	cursor: pointer;
+	transition: height 0.3s ease;
+}
+
+.animated-box {
+	transition: color 0.4s;
+}
+.animated-box:hover {
+	color: #fff;
+	transition: color 0.4s;
+}
+
+.animated-box::before {
+	content: "";
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 0;
+	height: 100%;
+	background-color: #de1d8d;
+	transition: width 0.3s ease;
+	z-index: -1;
+}
+
+.animated-box:hover::before {
+	width: 100%;
+	transition: width 0.3s ease;
+}
+
+.line {
+	@apply text-center text-2xl text-gray-400 my-4;
+}
+
+.project-box {
+	@apply hover:bg-[#151313d7] hover:border-pink-600 border-2 border-gray-700 rounded-xl hover:scale-105 duration-200;
 }
