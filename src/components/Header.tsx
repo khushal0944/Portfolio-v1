@@ -4,7 +4,7 @@ import { usePathname } from 'next/navigation'
 import React from 'react'
 import { navItems } from './Items'
 
-function Navbar() {
+function Header() {
     const pathName = usePathname()
   return (
     <nav className='flex justify-between items-center py-12 '>
@@ -29,4 +29,4 @@ function Navbar() {
   )
 }
 
-export default Navbar
+export default Header

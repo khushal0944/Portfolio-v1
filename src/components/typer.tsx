@@ -23,13 +23,11 @@ const Typer = ({ textArray, typingSpeed = 100, deletingSpeed = 70, lineDelay = 1
     const currentLine = textArray[currentLineIndex];
     
     if (!isDeleting && displayedText === currentLine) {
-      // Finished typing, wait before deleting
       const timer = setTimeout(() => setIsDeleting(true), lineDelay);
       return () => clearTimeout(timer);
     }
 
     if (isDeleting && displayedText === '') {
-      // Finished deleting, move to next line
       setIsDeleting(false);
       setCurrentLineIndex((prev) => prev + 1);
       return;

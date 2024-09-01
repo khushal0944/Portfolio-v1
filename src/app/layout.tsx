@@ -1,11 +1,11 @@
 import type { Metadata } from "next";
 import "./globals.css";
-import Navbar from "@/components/navbar";
 import Footer from "@/components/Footer";
 import ScrollBar from "@/components/ScrollBar";
+import Header from "@/components/Header";
 
 export const metadata: Metadata = {
-	title: "Khushal's Portfolio",
+	title: "Home | Khushal's Portfolio",
 	description: "Portfolio of Khushal Kumar",
 };
 
@@ -24,7 +24,7 @@ export default function RootLayout({
 			</head>
 			<body>
                 <ScrollBar />                    
-                <Navbar />
+                <Header />
                 <div id="wrapper" className="px-12">
                     {children}
                 </div>

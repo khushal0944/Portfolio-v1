@@ -3,7 +3,7 @@ import Link from "next/link";
 import React from "react";
 
 export const metadata: Metadata = {
-	title: "Education | Khushal",
+	title: "Education | Khushal's Portfolio",
 	description: "Education of Khushal",
 };
 
