@@ -1,16 +1,6 @@
 import React from "react";
 import Typer from "./typer";
 import Connect from "./Connect";
-import Projects from "./Projects";
-
-interface JsonDataType {
-    title: string;
-    vercel_link?: string;
-    github_link?: string;
-    description: string;
-    tags?: string[];
-}
-
 
 function HeroSection() {
 	const textLines = [
@@ -39,7 +29,7 @@ function HeroSection() {
 					<Connect />
 				</div>
 				<div className="w-1/3 max-[860px]:w-full max-w-[340px] mt-16 flex flex-col gap-8">
-					<div className="flex justify-between cursor-pointer rounded-xl border-gradient border-gradient1 items-center p-5">
+					<div className="flex justify-between rounded-xl border-gradient border-gradient1 items-center p-5">
 						<span className="text-green-400">
 							<svg
 								xmlns="http://www.w3.org/2000/svg"
@@ -58,21 +48,21 @@ function HeroSection() {
 						</span>
 						<p>What I Built</p>
 						<span className="text-gray-500">|</span>
-						<a href="/projects" className="text-yellow-500">
+						<a href="/projects" className="text-yellow-500 links yellow-link">
 							Projects <i className="ri-arrow-right-line text-yellow-500"></i>
 						</a>
 					</div>
-					<div className="flex justify-between cursor-pointer items-center rounded-xl border-gradient border-gradient2 p-5">
+					<div className="flex justify-between  items-center rounded-xl border-gradient border-gradient2 p-5">
 						<span>
                         <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6 -rotate-6 text-pink-600" fill="none" viewBox="0 0 24 24" stroke="#db2777 "><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253"></path></svg>
 						</span>
 						<p>More About Me</p>
 						<span className="text-gray-500">|</span>
-						<a href="/about" className="text-blue-500">
+						<a href="/about" className="text-blue-500 links blue-link">
 							About <i className="ri-arrow-right-line text-blue-500"></i>
 						</a>
 					</div>
-					<div className="flex justify-between cursor-pointer items-center rounded-xl border-gradient border-gradient3 p-5">
+					<div className="flex justify-between items-center rounded-xl border-gradient border-gradient3 p-5">
 						<span>
 							<svg
 								xmlns="http://www.w3.org/2000/svg"
@@ -93,7 +83,7 @@ function HeroSection() {
 						</span>
 						<p>Hire Me!</p>
 						<span className="text-gray-500">|</span>
-						<a className="text-pink-500" href="https://drive.google.com/file/d/1Fpf3LJ0TR2xspNO52RmDcqqZD1t5uAK2/view?usp=sharing">
+						<a className="text-pink-500 links pink-link" href="https://drive.google.com/file/d/1Fpf3LJ0TR2xspNO52RmDcqqZD1t5uAK2/view?usp=sharing">
 							Resume <i className="ri-arrow-right-line text-pink-500"></i>
 						</a>
 					</div>

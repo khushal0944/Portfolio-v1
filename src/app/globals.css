@@ -139,10 +139,9 @@ ol,
 }
 
 .border-gradient:hover::before {
-	filter: blur(15px);
+	filter: blur(13px);
 }
 
-/* Define gradients using CSS variables */
 .border-gradient1 {
 	--color1: rgb(205, 0, 144);
 	--color2: rgb(195, 0, 255);
@@ -150,9 +149,9 @@ ol,
 }
 
 .border-gradient2 {
-	--color1: rgb(255, 20, 147);
-	--color2: rgb(160, 32, 240);
-	--color3: rgb(72, 61, 139);
+	--color1: rgb(71, 255, 20);
+	--color2: rgb(92, 6, 145);
+	--color3: rgb(48, 20, 226);
 }
 
 .border-gradient3 {
@@ -183,8 +182,21 @@ ol,
 	position: absolute;
 	bottom: -6px;
 	right: 0;
-	transition: right 0.4s, width 0.4s, left 0.4s;
-	background-color: white;
+	transition: right 0.5s, width 0.5s, left 0.5s;
+	background-color: var(--color);
+}
+
+.white-link {
+    --color: #fff;
+}
+.pink-link {
+    --color: #ec4899;
+}
+.yellow-link {
+    --color: #eab308;
+}
+.blue-link {
+    --color: #3b82f6;
 }
 
 .links:hover::before {

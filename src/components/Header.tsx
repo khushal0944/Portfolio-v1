@@ -15,7 +15,7 @@ function Header() {
             {
                 navItems && navItems.map((singleItem) => (
                     <Link href={singleItem.path} className='links-parent' key={singleItem.name}>
-                        <div className='links capitalize'>
+                        <div className='links white-link capitalize'>
                             {singleItem.name}
                         </div>
                     </Link>

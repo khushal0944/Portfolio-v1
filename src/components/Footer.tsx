@@ -41,7 +41,7 @@ function Footer() {
                 }
             </div>
         </div>
-    <h1 className='text-center my-2 poppins'>Khushal Kumar &copy; {currentDate.getFullYear()} • Have a good {daysOfWeek[currentDate.getDay()]}! • <Link href={"mailto:khushalsuthar0944@gmail.com"} className='links poppins'>Contact</Link></h1>
+    <h1 className='text-center my-2 poppins'>Khushal Kumar &copy; {currentDate.getFullYear()} • Have a good {daysOfWeek[currentDate.getDay()]}! • <Link href={"mailto:khushalsuthar0944@gmail.com"} className='links white-link poppins'>Contact</Link></h1>
     </div>
     </>
   )
