@@ -38,7 +38,7 @@ function About() {
 				</div>
 				<div id="right" className="w-2/3 max-[710px]:w-full">
 					<div className="gray text-lg max-[420px]:text-base cursorText">
-						Hey, I'm <span className="font-semibold">Khushal Kumar</span>, full stack developer based in India.
+						Hey, I&apos;m <span className="font-semibold">Khushal Kumar</span>, full stack developer based in India.
 						Currently working as an Intern at{" "}
 						<Link href={"#"}><div className="floating-underline">
 							Automatically
