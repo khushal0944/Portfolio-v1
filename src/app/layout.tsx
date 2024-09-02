@@ -3,6 +3,7 @@ import "./globals.css";
 import Footer from "@/components/Footer";
 import ScrollBar from "@/components/ScrollBar";
 import Header from "@/components/Header";
+import BackToTop from "@/components/BackToTop";
 
 export const metadata: Metadata = {
 	title: "Home | Khushal's Portfolio",
@@ -28,6 +29,7 @@ export default function RootLayout({
                 <div id="wrapper" className="px-12">
                     {children}
                 </div>
+                <BackToTop />
                 <Footer />
             </body>
 		</html>

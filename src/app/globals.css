@@ -1,18 +1,22 @@
 /* Imported Fonts */
 @import url("https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
-@import url('https://fonts.googleapis.com/css2?family=SUSE:wght@100..800&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=SUSE:wght@100..800&display=swap");
 
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
 * {
-	/* font-family: cursive; */
-    font-family: "SUSE", sans-serif;
+	font-family: "SUSE", sans-serif;
 	font-weight: 400;
-    letter-spacing: .5px;
+	letter-spacing: 0.5px;
 	color: white;
 	transition: all 0.1s;
+}
+
+* ::selection {
+	background-color: #c61c7f;
+	color: #f5f4ef;
 }
 
 body {
@@ -50,7 +54,7 @@ html {
 }
 
 ::-webkit-scrollbar {
-	@apply w-1.5 ;
+	@apply w-1.5;
 }
 
 ::-webkit-scrollbar-thumb {
@@ -85,9 +89,9 @@ ol,
 	.show-menu {
 		display: block;
 	}
-    .grid-1 {
-        @apply grid-cols-1
-    }
+	.grid-1 {
+		@apply grid-cols-1;
+	}
 	.vertical-flex {
 		flex-direction: column;
 	}
@@ -130,7 +134,12 @@ ol,
 	left: 0;
 	right: 0;
 	bottom: 0;
-	background: conic-gradient(from 0deg, var(--color1), var(--color2), var(--color3));
+	background: conic-gradient(
+		from 0deg,
+		var(--color1),
+		var(--color2),
+		var(--color3)
+	);
 	z-index: -1;
 	filter: blur(6px);
 	border-radius: inherit;
@@ -187,16 +196,16 @@ ol,
 }
 
 .white-link {
-    --color: #fff;
+	--color: #fff;
 }
 .pink-link {
-    --color: #ec4899;
+	--color: #ec4899;
 }
 .yellow-link {
-    --color: #eab308;
+	--color: #eab308;
 }
 .blue-link {
-    --color: #3b82f6;
+	--color: #3b82f6;
 }
 
 .links:hover::before {
@@ -269,4 +278,87 @@ ol,
 
 .project-box {
 	@apply hover:bg-[#151313d7] hover:border-pink-600 border-2 border-gray-700 rounded-xl hover:scale-105 duration-200;
+}
+
+/* Menu Animation  */
+.animate-menu {
+	animation: animeOpen 300ms ease-out forwards;
+	transform-origin: top right;
+	@apply rounded-lg;
+}
+
+@keyframes animeOpen {
+	0% {
+		transform: scale(0);
+	}
+	100% {
+		transform: scale(1);
+	}
+}
+
+.animate-menu-close {
+	animation: animeClose 300ms ease-in forwards;
+	transform-origin: top right;
+	@apply rounded-lg;
+}
+
+@keyframes animeClose {
+	0% {
+		transform: scale(1);
+	}
+	100% {
+		transform: scale(0);
+	}
+}
+
+/* Back To Top Button CSS  */
+.Btn {
+	width: 45px;
+	height: 45px;
+	background: linear-gradient(#c61c7f, #ec4899);
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	border-radius: 50%;
+	cursor: pointer;
+	position: relative;
+	border: none;
+}
+
+.arrow path {
+	fill: white;
+}
+
+.text {
+	font-size: 0.7em;
+	width: 100px;
+	position: absolute;
+	color: white;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	bottom: -18px;
+	opacity: 0;
+	transition-duration: 0.5s;
+}
+
+.Btn:hover .text {
+	opacity: 1;
+	transition-duration: 0.5s;
+}
+
+.Btn:hover .arrow {
+	animation: slide-in-bottom 0.7s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+}
+
+@keyframes slide-in-bottom {
+	0% {
+		transform: translateY(10px);
+		opacity: 0;
+	}
+
+	100% {
+		transform: translateY(0px);
+		opacity: 1;
+	}
 }
