@@ -22,16 +22,17 @@ export default function RootLayout({
 					href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css"
 					rel="stylesheet"
 				/>
+				<link rel="shortcut icon" href="/favicon.ico" />
 			</head>
 			<body>
-                <ScrollBar />                    
-                <Header />
-                <div id="wrapper" className="px-12">
-                    {children}
-                </div>
-                <BackToTop />
-                <Footer />
-            </body>
+				<ScrollBar />
+				<Header />
+				<div id="wrapper" className="px-12">
+					{children}
+				</div>
+				<BackToTop />
+				<Footer />
+			</body>
 		</html>
 	);
 }
