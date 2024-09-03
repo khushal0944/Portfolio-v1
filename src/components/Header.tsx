@@ -9,8 +9,12 @@ function Header() {
     const [isMenuOpen, setIsMenuOpen] = useState(false)
     const [isMenuVisible, setIsMenuVisible] = useState(false)
     const menuRef = useRef<HTMLDivElement>(null)
+    const audioRef = useRef<HTMLAudioElement | null>(null)
 
     useEffect(() => {
+        audioRef.current = new Audio('./menu-sound.mp3')
+        audioRef.current.load()
+
         function handleClickOutside(event: MouseEvent) {
             if (menuRef.current && !menuRef.current.contains(event.target as Node)) {
                 closeMenu()
@@ -29,11 +33,20 @@ function Header() {
     }
 
     function handleMenuButton() {
+        playSound()
         if (isMenuOpen) {
             closeMenu()
         } else {
             setIsMenuOpen(true)
             setIsMenuVisible(true)
+        }
+    }
+
+    const playSound = () => {
+        if (audioRef.current) {
+            audioRef.current.currentTime = 0
+            audioRef.current.volume = 0.7
+            audioRef.current.play()
         }
     }
 
@@ -54,14 +67,15 @@ function Header() {
             }
         </div>
         <button onClick={handleMenuButton} className='relative z-10 h-10 w-10 show-menu rounded-full bg-gray-800 hidden text-2xl p-1 focus:bg-purple-600 duration-100'>
-        <i className={`ri-menu-3-fill absolute inset-0 flex items-center justify-center transition-all duration-100 ${isMenuOpen ? 'opacity-0 rotate-90' : 'opacity-100 rotate-0'}`}></i>
-        <i className={`ri-close-fill absolute inset-0 flex items-center justify-center transition-all duration-100 ${isMenuOpen ? 'opacity-100 rotate-0' : 'opacity-0 -rotate-90'}`}></i>
+        <i className={`ri-menu-3-fill menu-icon ${isMenuOpen ? 'opacity-0 rotate-90' : 'opacity-100 rotate-0'}`}></i>
+        <i className={`ri-close-fill menu-icon ${isMenuOpen ? 'opacity-100 rotate-0' : 'opacity-0 -rotate-90'}`}></i>
             {
-                isMenuOpen && <div className = {`w-40 top-12 right-0 flex flex-col gap-y-2 p-3 shadow-lg justify-center items-center -z-10 absolute bg-zinc-800 duration-300 ${isMenuVisible ? 'animate-menu' : 'animate-menu-close'}`} >
+                isMenuOpen && <div className = {`w-44 top-12 right-0 py-1 flex flex-col shadow-lg overflow-hidden justify-center -z-10 absolute bg-[#27272A] duration-300 ${isMenuVisible ? 'animate-menu' : 'animate-menu-close'}`} >
                 {
                 navItems && navItems.map((singleItem) => (
-                    <Link href={singleItem.path} className='w-full border-b-2 border-gray-600' key={singleItem.name}>
-                        <div ref={menuRef} className='capitalize hover:text-white hover:bg-[#1c1c1c] rounded-lg text-gray-300 text-base'>
+                    <Link href={singleItem.path} className='flex items-center gap-x-2 px-3 py-2 hover:bg-[#404045]' key={singleItem.name}>
+                        <i className={`${singleItem.icon} text-gray-300 text-xl`}></i>
+                        <div ref={menuRef} className='capitalize text-gray-300 text-base'>
                             {singleItem.name}
                         </div>
                     </Link>
