@@ -23,6 +23,7 @@ function About() {
 							src={"/profile.jpeg"}
 							width={200}
 							height={200}
+                            priority
 						/>
 						<div className="text-center">
 						<h1 className="text-2xl mb-3 poppins font-bold">Khushal Kumar</h1>

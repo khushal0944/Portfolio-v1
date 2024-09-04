@@ -320,7 +320,6 @@ ol,
 	align-items: center;
 	justify-content: center;
 	border-radius: 50%;
-	cursor: pointer;
 	position: relative;
 	border: none;
 }
@@ -365,6 +364,7 @@ ol,
 
 ul li {
     position: relative;
+    list-style-type: none;
 }
 
 ul li::before {
@@ -375,7 +375,12 @@ ul li::before {
     position: absolute;
     top: 1px;
     left: -30px;
-    /* background-color: red; */
     height: 32px;
     width: 32px;
+}
+
+@media screen and (max-width: 425px) {
+    ul li::before {
+        top: -2px;
+    }
 }
