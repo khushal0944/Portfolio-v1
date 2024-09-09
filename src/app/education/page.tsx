@@ -15,15 +15,16 @@ function Page() {
 			<h1 className="text-5xl poppins font-black mb-10">Education</h1>
 			{educationData.map((singleEducation) => {
 				return (
-					<ul className="relative" key={singleEducation.institute}>
-						<div className="ml-5">
-							<Link href={singleEducation.instituteLink}>
-                            <li>
-								<h1 className="mt-5 italic poppins text-2xl cursor-pointer max-[428px]:text-base max-[768px]:text-lg text-white font-bold">
+					<ul className="relative education-list" key={singleEducation.institute}>
+						<div className="ml-5 mt-5">
+                            <li className="flex items-center justify-between">
+								<h1 className="italic poppins text-2xl max-[428px]:text-base max-[768px]:text-lg text-white font-bold">
 									{singleEducation.institute}
 								</h1>
-                                </li>
-							</Link>
+                                <Link href={singleEducation.instituteLink}>
+                                    <i className="ri-external-link-fill hover:text-pink-500 text-2xl"></i>
+                                </Link>
+                            </li>
 							<p className=" font-black gray text-sm">
 								{singleEducation.year}
 							</p>
