@@ -41,7 +41,7 @@ function About() {
 					<div className="gray text-lg max-[420px]:text-base cursorText">
 						Hey, I&apos;m <span className="font-semibold">Khushal Kumar</span>, full stack developer based in India.
 						Currently working as an Intern at{" "}
-						<Link href={"#"}><div className="floating-underline">
+						<Link href={"https://automatically.cc"}><div className="floating-underline">
 							Automatically
 						</div></Link>
 						. My goal is to bring your ideas to life by crafting
@@ -51,7 +51,7 @@ function About() {
                     I am always looking to learn new things. I am currently working on a <div className="inline-block px-1 bg-blue-900">Blog Section of Automatically website</div>. At the same time I am actively on the lookout for remote internships which I can pursue in field of Web Development.
                     </div>
                     <div className="gray my-10 text-lg max-[420px]:text-base cursorText">
-                    I am a strong advocate for open source and I am always interested in working on new projects with new people. Feel free to reach out if you have anything to talk about, you can reach me through <div className="floating-underline">Gmail <i className="ri-external-link-fill text-xl text-white duration-150 cursor-pointer"></i></div> or <div className="floating-underline">Linkedin <i className="ri-external-link-fill text-xl text-white duration-150 cursor-pointer"></i></div>
+                    I am a strong advocate for open source and I am always interested in working on new projects with new people. Feel free to reach out if you have anything to talk about, you can reach me through <Link href={"mailto:khushalsuthar0944@gmail.com"}><div className="floating-underline">Gmail <i className="ri-external-link-fill text-xl text-white duration-150 cursor-pointer"></i></div></Link> or <Link href={"https://www.linkedin.com/in/khushal0944"}><div className="floating-underline">Linkedin <i className="ri-external-link-fill text-xl text-white duration-150 cursor-pointer"></i></div></Link>
                     </div>
             {
                 companyExperience.length > 0 && <h1 className='text-5xl max-[420px]:text-4xl mt-2 poppins font-black'>Experience</h1>

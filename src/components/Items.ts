@@ -142,7 +142,7 @@ export const projectsData: projectType[] = [
 		description: "",
 		github_link: "https://github.com/khushal0944/Mega_Blog_Using_Appwrite",
 		vercel_link: "",
-		tags: ["Blog", "Appwrite", "user Profiles"],
+		tags: ["Blog", "Appwrite", "User Profiles"],
 	},
 ];
 
@@ -342,18 +342,17 @@ export const stackData: stackDataType[] = [
 
 export const educationData: educationDataType[] = [
     {
+        institute: "Swami Keshvanand Institute of Technology, Management & Gramothan, Jaipur",
+        year: "2022-2026",
+        description: "B.Tech",
+        instituteLink: "https://www.skit.ac.in/",
+        pursuing: true,
+    },
+    {
         institute: "St. Paul's Senior Secondary School, Abu Road",
         year: "2020-2022",
         description: "Class 10th - 12th, CBSE Boards",
         instituteLink: "http://stpaulssrsecschool.org",
         pursuing: false,
-    },
-    {
-        institute:
-            "Swami Keshvanand Institute of Technology, Management & Gramothan, Jaipur",
-        year: "2022-2026",
-        description: "B.Tech",
-        instituteLink: "https://www.skit.ac.in/",
-        pursuing: true,
     },
 ];

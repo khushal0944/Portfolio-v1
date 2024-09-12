@@ -1,6 +1,5 @@
 import Link from "next/link";
 import React from "react";
-import { companyExperience } from "./Items";
 
 interface propsType {
     experienceData: companyExperienceType
