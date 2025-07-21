@@ -30,7 +30,7 @@ function Footer() {
             <div>
                 <h1 className='mb-1 cursorText'>See my work</h1>
                 <Link href={"mailto:khushalsuthar0944@gmail.com"}><div className='text-[#a3a3a3] my-1 duration-150 hover:text-white'>Hire me</div></Link>
-                <Link href="https://drive.google.com/file/d/1Fpf3LJ0TR2xspNO52RmDcqqZD1t5uAK2/view?usp=sharing" target='_blank'><div className='text-[#a3a3a3] my-1 duration-150 hover:text-white'>Resume</div></Link>
+                <Link href="https://drive.google.com/file/d/1sGN87FssOgYGwwo-bA7EnTsEnHA8sM3w/view?usp=sharing" target='_blank'><div className='text-[#a3a3a3] my-1 duration-150 hover:text-white'>Resume</div></Link>
             </div>
             <div>
                 <div className='cursorText mb-1'>Connect</div>

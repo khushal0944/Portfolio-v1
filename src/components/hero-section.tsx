@@ -24,7 +24,7 @@ function HeroSection() {
 						I Build <Typer textArray={textLines} />
 					</h1>
 					<p className="mt-5 text-lg gray">
-                    Engineering student with a strong passion for web development, specializing in the MERN stack. Currently pursuing a B.Tech degree with an expected graduation in 2026. Highly motivated to learn and collaborate on innovative projects.
+                    Computer Science (IoT) undergraduate with hands-on experience in full-stack development using the MERN stack and Next.js. Skilled in building scalable, production-ready web applications with a strong focus on performance and user experience.
 					</p>
 					<Connect />
 				</div>

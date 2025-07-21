@@ -27,9 +27,9 @@ function About() {
 						/>
 						<div className="text-center">
 						<h1 className="text-2xl mb-3 poppins font-bold">Khushal Kumar</h1>
-							<p className="poppins gray">Full Stack Intern</p>
+							<p className="poppins gray">React Dev. Intern</p>
 							<Link href="www.automatically.cc" className="gray poppins">
-								Automatically
+								Celebal
 							</Link>
 						</div>
 						<Link href={"https://www.linkedin.com/in/khushal0944/?message=Hello"} className="border poppins border-white hover:bg-white hover:text-black duration-200 p-2 font-semibold rounded-3xl">
@@ -41,14 +41,14 @@ function About() {
 					<div className="gray text-lg max-[420px]:text-base cursorText">
 						Hey, I&apos;m <span className="font-semibold">Khushal Kumar</span>, full stack developer based in India.
 						Currently working as an Intern at{" "}
-						<Link href={"https://automatically.cc"}><div className="floating-underline">
-							Automatically
+						<Link href={"https://celebaltech.com"}><div className="floating-underline">
+							Celebal Technologies
 						</div></Link>
 						. My goal is to bring your ideas to life by crafting
 						beautiful and inspiring websites.
 					</div>
                     <div className="gray text-lg max-[420px]:text-base mt-10 cursorText">
-                    I am always looking to learn new things. I am currently working on a <div className="inline-block px-1 bg-blue-900">Blog Section of Automatically website</div>. At the same time I am actively on the lookout for remote internships which I can pursue in field of Web Development.
+                    I am always eager to learn and take on new challenges. I am currently working on the <div className="inline-block px-1 bg-blue-900">ShareFilez website at Celebal Technologies</div>, where I&apos;m gaining hands-on experience in web development. At the same time, I am actively seeking remote job or internship opportunities across diverse domains, where I can contribute effectively while continuing to grow professionally.
                     </div>
                     <div className="gray my-10 text-lg max-[420px]:text-base cursorText">
                     I am a strong advocate for open source and I am always interested in working on new projects with new people. Feel free to reach out if you have anything to talk about, you can reach me through <Link href={"mailto:khushalsuthar0944@gmail.com"}><div className="floating-underline">Gmail <i className="ri-external-link-fill text-xl text-white duration-150 cursor-pointer"></i></div></Link> or <Link href={"https://www.linkedin.com/in/khushal0944"}><div className="floating-underline">Linkedin <i className="ri-external-link-fill text-xl text-white duration-150 cursor-pointer"></i></div></Link>
