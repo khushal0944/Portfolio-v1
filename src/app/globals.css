@@ -15,7 +15,7 @@
 }
 
 * ::selection {
-    background-color: #c61c7f;
+    background-color: #42885F;
 	color: #f5f4ef;
 }
 
@@ -58,7 +58,7 @@ html {
 }
 
 ::-webkit-scrollbar-thumb {
-	@apply rounded-xl bg-pink-500;
+	@apply rounded-xl bg-[#50C878];
 }
 
 .cursor-pointer,
@@ -96,8 +96,8 @@ ol,
 .gray {
 	color: #a3a3a3;
 }
-.pink {
-	@apply text-pink-500;
+.MainColor {
+	@apply text-[#50C878];
 }
 
 @media screen and (max-width: 1110px) {
@@ -233,7 +233,7 @@ ol,
 	left: 0;
 	width: 100%;
 	height: 2px;
-	background-color: #de1d8d;
+	background-color: #42995F;
 	transition: height 0.3s ease;
 	z-index: -1;
 }
@@ -258,8 +258,8 @@ ol,
 	left: 0;
 	width: 0;
 	height: 100%;
-	background-color: #de1d8d;
-	transition: width 0.3s ease;
+	background-color: #42995F;
+	transition: width 0.2s ease;
 	z-index: -1;
 }
 
@@ -273,7 +273,7 @@ ol,
 }
 
 .project-box {
-	@apply hover:bg-[#151313d7] hover:border-pink-600 border-2 border-gray-700 rounded-xl hover:scale-105 duration-200;
+	@apply hover:bg-[#151313d7] hover:border-[#50C878] border-2 border-gray-700 rounded-xl hover:scale-105 duration-200;
 }
 
 .menu-icon {
@@ -315,7 +315,7 @@ ol,
 .Btn {
 	width: 45px;
 	height: 45px;
-	background: linear-gradient(#c61c7f, #ec4899);
+	background: linear-gradient(#054206, #043305);
 	display: flex;
 	align-items: center;
 	justify-content: center;

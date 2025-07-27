@@ -24,6 +24,7 @@ interface projectType {
 	github_link?: string;
 	description: string;
 	tags?: string[];
+    subTitle?: string;
 }
 
 interface stackDataType {

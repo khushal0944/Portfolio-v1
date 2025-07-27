@@ -18,7 +18,10 @@ function page() {
 			<hr className="mt-5 max-[800px]:mb-5" />
 			{data.map((singleData, index) => {
 				return (
-					<div key={index} className="w-3/4 border  max-[860px]:w-full border-gray-700 mx-auto mt-8 rounded-xl p-5">
+					<div
+						key={index}
+						className="w-3/4 border  max-[860px]:w-full border-gray-700 mx-auto mt-8 rounded-xl p-5"
+					>
 						<h1 className="text-2xl underline underline-offset-4 capitalize font-bold text-center">
 							{singleData.heading}
 						</h1>

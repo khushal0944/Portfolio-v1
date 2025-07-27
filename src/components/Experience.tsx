@@ -11,7 +11,7 @@ function Experience({experienceData}: propsType) {
 			<h1 className="mt-8 poppins text-lg gray">
 				{experienceData.post} @{" "}
 				<Link href={experienceData.company_link}>
-					<div className="pink poppins animated-box">
+					<div className="MainColor poppins animated-box">
 						{experienceData.company}
 					</div>
 				</Link>
