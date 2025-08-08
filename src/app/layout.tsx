@@ -7,7 +7,7 @@ import BackToTop from "@/components/BackToTop";
 
 export const metadata: Metadata = {
 	title: "Home | Khushal's Portfolio",
-	description: "Portfolio of Khushal Kumar",
+	description: "Home Page of Portfolio of Khushal Kumar",
 };
 
 export default function RootLayout({

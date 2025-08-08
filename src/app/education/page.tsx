@@ -5,7 +5,7 @@ import React from "react";
 
 export const metadata: Metadata = {
 	title: "Education | Khushal's Portfolio",
-	description: "Education of Khushal",
+	description: "Education Page of Portfolio of Khushal Kumar",
 };
 
 function Page() {
@@ -31,16 +31,24 @@ function Page() {
 							<p className=" font-black gray text-sm">
 								{singleEducation.year}
 							</p>
-							<p className=" text-[#ffff00] text-lg font-extrabold poppins">
-								{singleEducation.description}
-							</p>
-							<div className="absolute right-0 bottom-0">
-								{singleEducation.pursuing && (
-									<span className="text-sm poppins min-[428px]:text-base bg-[#42995F] font-bold rounded p-1">
-										Currently Pursuing
-									</span>
-								)}
+							<div className="flex justify-between flex-wrap gap-2">
+								<p className="text-[#ffff00] text-lg font-extrabold poppins ">
+									{singleEducation.description}
+								</p>
+								<div>
+									{singleEducation.pursuing && (
+										<span className="text-sm poppins min-[428px]:text-base bg-[#42995F] font-bold rounded p-1">
+											Currently Pursuing
+										</span>
+									)}
+								</div>
 							</div>
+							{/* {singleEducation.additionalDescription && (
+								<p className=" text-[#ffff00] text-lg font-extrabold poppins">
+									{singleEducation.additionalDescription}
+								</p>
+							)}
+							<div className="absolute right-0 bottom-0 max-[420px]:mt-2 max-[420px]:relative"></div> */}
 						</div>
 					</ul>
 				);

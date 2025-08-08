@@ -3,8 +3,8 @@ import { Metadata } from "next";
 import React from "react";
 
 export const metadata: Metadata = {
-	title: "Stack | Khushal's Portfolio",
-	description: "Portfolio of Khushal Kumar",
+	title: "Tech Stack | Khushal's Portfolio",
+	description: "Tech Stack Page of Portfolio of Khushal Kumar",
 };
 
 function page() {

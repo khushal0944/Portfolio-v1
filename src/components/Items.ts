@@ -72,7 +72,7 @@ export const companyExperience: companyExperienceType[] = [
 		post: "React Developer Intern",
 		work: [
 			"Completed 8-weeks structured React training covering fundamentals to advanced concepts.",
-			"Developed ShareFilez website featuring secure file uploads, real-time sharing, and RESTful API integration.",
+			"Developed SendFilez website featuring secure file uploads and RESTful API integration.",
 		],
 	},
 	{
@@ -110,7 +110,7 @@ export const projectsData: projectType[] = [
 	{
 		title: "Secure File Transfer App",
 		description:
-			"A real-time file transfer application with user login/registration, built using Socket.IO. It supports seamless small file transfers with live progress updates, responsive UI, and secure encrypted connections to ensure safe and efficient data transmission across devices.",
+			"A File transfer application with user login/registration, built using Socket.IO. It supports seamless small file transfers with live progress updates, responsive UI, and secure encrypted connections to ensure safe and efficient data transmission across devices.",
 		github_link: "https://github.com/khushal0944/Celebal_File_Transfer",
 		tags: ["Celebal Technologies", "Internship", "Socket.IO"],
 	},
@@ -414,18 +414,20 @@ export const stackData: stackDataType[] = [
 ];
 
 export const educationData: educationDataType[] = [
-    {
-        institute: "Swami Keshvanand Institute of Technology, Management & Gramothan, Jaipur",
-        year: "2022-2026",
-        description: "B.Tech CSE(IoT), CGPA - 9.21",
-        instituteLink: "https://www.skit.ac.in",
-        pursuing: true,
-    },
-    {
-        institute: "St. Paul's Senior Secondary School, Abu Road",
-        year: "2020-2022",
-        description: "Class 10th - 12th, CBSE Boards",
-        instituteLink: "http://stpaulssrsecschool.org",
-        pursuing: false,
-    },
+	{
+		institute:
+			"Swami Keshvanand Institute of Technology, Management & Gramothan, Jaipur",
+		year: "2022-2026",
+		description: "B.Tech CSE(IoT), CGPA - 9.21",
+		// additionalDescription: "CGPA - 9.21",
+		instituteLink: "https://www.skit.ac.in",
+		pursuing: true,
+	},
+	{
+		institute: "St. Paul's Senior Secondary School, Abu Road",
+		year: "2020-2022",
+		description: "Class 10th - 12th, CBSE Boards",
+		instituteLink: "http://stpaulssrsecschool.org",
+		pursuing: false,
+	},
 ];

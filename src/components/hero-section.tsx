@@ -110,7 +110,7 @@ function HeroSection() {
 						<span className="text-gray-500">|</span>
 						<a
 							className="text-pink-500 links pink-link"
-							href="https://drive.google.com/file/d/1Fpf3LJ0TR2xspNO52RmDcqqZD1t5uAK2/view?usp=sharing"
+							href="https://drive.google.com/file/d/18TI4aGISIJT6iO8ZWlxsMerHya1Y5vR4/view?usp=sharing"
 						>
 							Resume{" "}
 							<i className="ri-arrow-right-line text-pink-500"></i>

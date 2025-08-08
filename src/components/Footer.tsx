@@ -14,37 +14,63 @@ function Footer() {
 		return () => clearInterval(intervalId);
 	}, []);
   return (
-    <>
-    <div className='w-3/4 max-[800px]:w-full max-[800px]:mt-6 text-center mx-auto' >
-        <div className='grid grid-cols-3 mx-auto'>
-            <div id="navitems" className=''>
-                <span className='my-1 cursorText'>Index</span>
-                {navItems.map((singleItem) => (
-                    <Link href={singleItem.path} key={singleItem.name}>
-                    <div className='capitalize my-1 text-[#a3a3a3] duration-150 hover:text-white'>
-                        {singleItem.name}
-                    </div>
-                </Link>
-                ))}
-            </div>
-            <div>
-                <h1 className='mb-1 cursorText'>See my work</h1>
-                <Link href={"mailto:khushalsuthar0944@gmail.com"}><div className='text-[#a3a3a3] my-1 duration-150 hover:text-white'>Hire me</div></Link>
-                <Link href="https://drive.google.com/file/d/1sGN87FssOgYGwwo-bA7EnTsEnHA8sM3w/view?usp=sharing" target='_blank'><div className='text-[#a3a3a3] my-1 duration-150 hover:text-white'>Resume</div></Link>
-            </div>
-            <div>
-                <div className='cursorText mb-1'>Connect</div>
-                {
-                    connectionItems.map((singleItem) => (
-                        <Link href={singleItem.link} key={singleItem.name}><div className='capitalize text-[#a3a3a3] my-1 duration-150 hover:text-white'>{singleItem.name}</div></Link>
-                    ))
-                }
-            </div>
-        </div>
-    <h1 className='text-center mt-3 mb-2 poppins'>Khushal Kumar &copy; {currentDate.getFullYear()} • Have a good {daysOfWeek[currentDate.getDay()]}! • <Link href={"mailto:khushalsuthar0944@gmail.com"} className='links white-link poppins'>Contact</Link></h1>
-    </div>
-    </>
-  )
+		<>
+			<div className="w-3/4 max-[800px]:w-full max-[800px]:mt-6 text-center mx-auto">
+				<div className="grid grid-cols-3 mx-auto">
+					<div id="navitems" className="">
+						<span className="my-1 cursorText">Index</span>
+						{navItems.map((singleItem) => (
+							<Link href={singleItem.path} key={singleItem.name}>
+								<div className="capitalize my-1 text-[#a3a3a3] duration-150 hover:text-white">
+									{singleItem.name}
+								</div>
+							</Link>
+						))}
+					</div>
+					<div>
+						<h1 className="mb-1 cursorText">See my work</h1>
+						<Link href={"mailto:khushalsuthar0944@gmail.com"}>
+							<div className="text-[#a3a3a3] my-1 duration-150 hover:text-white">
+								Hire me
+							</div>
+						</Link>
+						<Link
+							href="https://drive.google.com/file/d/18TI4aGISIJT6iO8ZWlxsMerHya1Y5vR4/view?usp=sharing"
+							target="_blank"
+						>
+							<div className="text-[#a3a3a3] my-1 duration-150 hover:text-white">
+								Resume
+							</div>
+						</Link>
+					</div>
+					<div>
+						<div className="cursorText mb-1">Connect</div>
+						{connectionItems.map((singleItem) => (
+							<Link
+								href={singleItem.link}
+								key={singleItem.name}
+								target="_blank"
+							>
+								<div className="capitalize text-[#a3a3a3] my-1 duration-150 hover:text-white">
+									{singleItem.name}
+								</div>
+							</Link>
+						))}
+					</div>
+				</div>
+				<h1 className="text-center mt-3 mb-2 poppins">
+					Khushal Kumar &copy; {currentDate.getFullYear()} • Have a
+					good {daysOfWeek[currentDate.getDay()]}! •{" "}
+					<Link
+						href={"mailto:khushalsuthar0944@gmail.com"}
+						className="links white-link poppins"
+					>
+						Contact
+					</Link>
+				</h1>
+			</div>
+		</>
+  );
 }
 
 export default Footer

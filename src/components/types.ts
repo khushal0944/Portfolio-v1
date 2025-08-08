@@ -39,9 +39,10 @@ interface stackDataType {
 }
 
 interface educationDataType {
-    institute: string,
-    year: string,
-    description: string,
-    instituteLink: string,
-    pursuing: boolean,
+	institute: string;
+	year: string;
+	description: string;
+	additionalDescription?: string;
+	instituteLink: string;
+	pursuing: boolean;
 }

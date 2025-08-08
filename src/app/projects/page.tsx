@@ -4,7 +4,7 @@ import React from 'react'
 
 export const metadata: Metadata = {
 	title: "Projects | Khushal's Portfolio",
-	description: "Projects of Khushal Kumar",
+	description: "Projects Page of Portfolio of Khushal Kumar",
 };
 
 function page() {
