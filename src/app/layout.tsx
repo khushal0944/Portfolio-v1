@@ -8,6 +8,9 @@ import BackToTop from "@/components/BackToTop";
 export const metadata: Metadata = {
 	title: "Home | Khushal's Portfolio",
 	description: "Home Page of Portfolio of Khushal Kumar",
+    icons: {
+        icon: "/man.png"
+    }
 };
 
 export default function RootLayout({
@@ -22,7 +25,6 @@ export default function RootLayout({
 					href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css"
 					rel="stylesheet"
 				/>
-				<link rel="shortcut icon" href="/favicon.ico" />
 			</head>
 			<body>
 				<ScrollBar />
